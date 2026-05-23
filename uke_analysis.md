@@ -1,9 +1,9 @@
 # Xiaomi Pad 7 (uke) Kernel Analysis
 
 - **Finding**: CPU topology and cluster layout
-- **Source**: Not found in source (no specific DT for uke, sm7675, or pineapple found in `arch/arm64/boot/dts/qcom`)
+- **Source**: Not found in source (no specific DT for uke, sm7675, or pineapple found in `arch/arm64/boot/dts/qcom`. The provided repo `android_device_xiaomi_uke` is an Android/LineageOS device tree, not a kernel device tree containing `.dts` files).
 - **Status**: ❌ NOT FOUND
-- **Notes**: The source contains generic build configs (`uke.bzl`, `xiaomi_sm8650_common.bzl`, `pineapple.bzl`), but specific device tree sources for CPU topologies are missing in this codebase.
+- **Notes**: The source contains generic build configs (`uke.bzl`, `xiaomi_sm8650_common.bzl`, `pineapple.bzl`), but specific kernel device tree sources for CPU topologies are missing in this codebase.
 
 - **Finding**: CPU frequency tables (OPP tables or cpufreq driver)
 - **Source**: `arch/arm64/configs/vendor/pineapple_GKI.config:21` (`CONFIG_ARM_QCOM_CPUFREQ_HW=m`)
